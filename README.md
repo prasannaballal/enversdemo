@@ -1,6 +1,4 @@
-Here is a basic `README.md` file for your project:
 
-```markdown
 # Envers Demo
 
 This is a Spring Boot project demonstrating the use of Hibernate Envers for auditing entity changes in a PostgreSQL database.

@@ -1,0 +1,8 @@
+CREATE TABLE PERSON (
+    id BIGSERIAL NOT NULL CONSTRAINT person_pkey PRIMARY KEY,
+    first_name VARCHAR(255) ,
+    last_name VARCHAR(255) ,
+    email VARCHAR(255) ,
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    modified_date TIMESTAMP DEFAULT NULL
+);

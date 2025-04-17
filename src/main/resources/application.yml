@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: enversdemo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/enversdemo
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      temp:
+        use_jdbc_metadata_default: false
+      hibernate:
+        format_sql: true
+        envers:
+          autoRegisterListeners: true
+    database: postgresql
+    open-in-view: false
